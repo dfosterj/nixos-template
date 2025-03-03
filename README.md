@@ -23,7 +23,7 @@ Add the path to this nix directory to imports (see example below).
 
 4.) Create or decide common hardware configuration to use,
 ```
-a generic laptop and nvidia hardware confs can be found at ./hardware/
+a generic laptop,desktop,  and nvidia gaming desktop hardware confs can be found at ./hardware/
 decide and remember the name, or create your own to be used in setup.sh
 ```
 
