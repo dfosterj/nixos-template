@@ -22,7 +22,7 @@ in
     ./nix_modules/flatpak.nix
     ./nix_modules/picom.nix
 	./nix_modules/unstable.nix
-    ./nix_modules/systemd_custom_dotfile.nix
+    # ./nix_modules/systemd_custom_dotfile.nix
     ];
 
 
