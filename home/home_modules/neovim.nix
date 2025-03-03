@@ -1,0 +1,69 @@
+{ pkgs, ... }:
+{
+
+  programs.neovim = {
+    enable = true;
+    defaultEditor = false;
+    extraPackages = [
+          pkgs.vimPlugins.LazyVim
+          pkgs.vimPlugins.bufferline-nvim
+          pkgs.vimPlugins.catppuccin-nvim
+          pkgs.vimPlugins.clangd_extensions-nvim
+          pkgs.vimPlugins.cmp-buffer
+          pkgs.vimPlugins.cmp-nvim-lsp
+          pkgs.vimPlugins.cmp-nvim-ultisnips
+          pkgs.vimPlugins.cmp-path
+          pkgs.vimPlugins.cmp_luasnip
+          pkgs.vimPlugins.conform-nvim
+          pkgs.vimPlugins.crates-nvim
+          pkgs.vimPlugins.csharpls-extended-lsp-nvim
+          pkgs.vimPlugins.cyberdream-nvim
+          pkgs.vimPlugins.dashboard-nvim
+          pkgs.vimPlugins.diffview-nvim
+          pkgs.vimPlugins.dracula-nvim
+          pkgs.vimPlugins.dressing-nvim
+          pkgs.vimPlugins.friendly-snippets
+          pkgs.vimPlugins.gitsigns-nvim
+          pkgs.vimPlugins.gruber-darker-nvim
+          pkgs.vimPlugins.gruvbox-nvim
+          pkgs.vimPlugins.indent-blankline-nvim
+          pkgs.vimPlugins.kanagawa-nvim
+          pkgs.vimPlugins.lazy-nvim
+          pkgs.vimPlugins.lualine-nvim
+          pkgs.vimPlugins.luasnip
+          pkgs.vimPlugins.mason-lspconfig-nvim
+          pkgs.vimPlugins.mason-nvim
+          pkgs.vimPlugins.miasma-nvim
+          pkgs.vimPlugins.mini-nvim
+          pkgs.vimPlugins.neo-tree-nvim
+          pkgs.vimPlugins.noice-nvim
+          pkgs.vimPlugins.nui-nvim
+          pkgs.vimPlugins.nvim-cmp
+          pkgs.vimPlugins.nvim-dap
+          pkgs.vimPlugins.nvim-dap-go
+          pkgs.vimPlugins.nvim-dap-python
+          pkgs.vimPlugins.nvim-dap-ui
+          pkgs.vimPlugins.nvim-dap-virtual-text
+          pkgs.vimPlugins.nvim-lint
+          pkgs.vimPlugins.nvim-lspconfig
+          pkgs.vimPlugins.nvim-nio
+          pkgs.vimPlugins.nvim-notify
+          pkgs.vimPlugins.nvim-treesitter
+          pkgs.vimPlugins.nvim-treesitter-textobjects
+          pkgs.vimPlugins.nvim-ts-autotag
+          pkgs.vimPlugins.omnisharp-extended-lsp-nvim
+          pkgs.vimPlugins.onedark-nvim
+          pkgs.vimPlugins.persistence-nvim
+          pkgs.vimPlugins.plenary-nvim
+          pkgs.vimPlugins.rustaceanvim
+          pkgs.vimPlugins.telescope-fzf-native-nvim
+          pkgs.vimPlugins.telescope-nvim
+          pkgs.vimPlugins.todo-comments-nvim
+          pkgs.vimPlugins.toggleterm-nvim
+          pkgs.vimPlugins.tokyonight-nvim
+          pkgs.vimPlugins.trouble-nvim
+          pkgs.vimPlugins.ultisnips
+          pkgs.vimPlugins.which-key-nvim
+    ];
+  };
+}
