@@ -54,8 +54,6 @@
     wmctrl
     wget
     xclip
-    yabridge
-    yabridgectl
     zenity
     # == Dev ==
     cmake
@@ -85,9 +83,6 @@
     tmux
     vimPlugins.vim-plug
     vscodium
-    wineWowPackages.fonts
-    wineWowPackages.stable
-    winetricks
     yarn
     # == Hyprland ==
     nwg-bar

@@ -55,11 +55,6 @@ Which also include colorscheme override
 
 Home.nix has just some basic git information setup, ruby gem env setup.
 
-#### == Music Recoding ==
-For windows VST, Wine and yabridge are installed, and yabridge directory links are included in home.nix
-remove yabridge and wine pkgs, and references to yabridge from home.nix if not planning on doing music
-recording with windows vsts.
-
 #### == Nvidia Gaming ==
 The hardare/nvidia-gaming.nix is a working example for gamepad and nvidia setup.
 
