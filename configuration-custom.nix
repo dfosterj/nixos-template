@@ -20,8 +20,8 @@ in
     (./. + "/hardware/${hostVars.workstationName}-hardware-custom.nix")
     ./nix_modules/pkgs.nix
     ./nix_modules/flatpak.nix
-    ./nix_modules/picom.nix
 	./nix_modules/unstable.nix
+    # ./nix_modules/picom.nix
     # ./nix_modules/systemd_custom_dotfile.nix
     ];
 

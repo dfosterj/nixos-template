@@ -98,7 +98,7 @@
     escrotum
     feh
     networkmanager_dmenu
-    # picom
+    picom
     polybarFull
     rofi
     slock
