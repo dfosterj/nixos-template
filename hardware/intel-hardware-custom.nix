@@ -8,6 +8,7 @@
 	# force driver probe by i915.force_probe=7d45 module parameter
 	# or CONFIG_DRM_I915_FORCE_PROBE=7d45 configuration option.
     #boot.kernelParams = [ "i915.force_probe=XXXX" ];
+	boot.kernelPackages = pkgs.linuxPackages_latest;
 
   #  == Hardware Custom  ==
 

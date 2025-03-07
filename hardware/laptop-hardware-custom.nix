@@ -3,6 +3,9 @@
 {
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
 
+  #  == Boot ==
+  boot.kernelPackages = pkgs.linuxPackages_latest;
+
   #  == Hardware Custom  ==
 
   hardware = {
