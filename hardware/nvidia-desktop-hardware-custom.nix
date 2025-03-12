@@ -3,15 +3,23 @@
 {
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
 
+
   # == Extra Boot ==
   boot = {
+	# kernelPackages = pkgs.linuxPackages_latest;
+
     # == gaming ==
     extraModulePackages = with config.boot.kernelPackages; [ xpadneo ];
     extraModprobeConfig = ''
       options bluetooth disable_ertm=Y
     '';
     # connect xbox controller
+  	kernelParams = [
+	    "nvidia-drm.modeset=1"
+	    "nvidia-drm.fbdev=1"
+  	];
   };
+
 
   # == Virtualization ==
   virtualisation = {
@@ -21,11 +29,12 @@
   };
 
   hardware = {
-  	cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 	enableRedistributableFirmware = true;
-    opengl.driSupport32Bit = true;
-    nvidia-container-toolkit.enable = true;
+	opengl.enable = true;
 	steam-hardware.enable = true;
+  	cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
+    nvidia-container-toolkit.enable = true;
+    opengl.driSupport32Bit = true;
     xpadneo.enable = true;
   };
 
@@ -34,10 +43,11 @@
     modesetting.enable = true;
     powerManagement.enable = false;
     powerManagement.finegrained = false;
-    open = true;
+    open = false;
     nvidiaSettings = true;
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
+
 
 
   # == Bluetooth ==
